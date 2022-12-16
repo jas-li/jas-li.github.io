@@ -1,0 +1,112 @@
+body{
+    text-align: center;
+    font-family: var(--font-family);
+}
+
+.home__header{
+    display: flex;
+    flex-direction: row;
+    margin-left: auto;
+    margin-right: auto;
+    margin: auto;
+    height: 800px;
+}
+
+.centered-image {
+    display: block;
+    text-align: center;
+  }
+  
+
+.home__header-content{
+    flex:1;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    margin: auto;
+}
+
+.home__header-logo{
+
+    margin-top: -10rem;
+}
+
+
+.home__header-content h1{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: 50px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    line-height: 75px;
+    text-align: center;
+    margin-top: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.home__header-content p{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 30px;
+    font-weight: 800;
+    letter-spacing: 3px;
+    word-spacing: 15 px;
+    text-shadow: 3px 0px 8px;
+    text-decoration: none;
+    line-height: 28px;
+    color: rgb(239, 126, 126);
+    margin-top: 0;
+    margin-left: auto;
+    margin-right: auto;
+    
+    
+}
+
+.home__header-content button {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight:800;
+    font-size: 25px;
+    line-height: 20px;
+    background: rgb(40, 110, 61);
+    color: white;
+    outline:none;
+    cursor: pointer; 
+    padding: 20px;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius:15px;
+}
+
+.home__header-start button{
+    flex:2;
+    min-height:30px;
+    font-family: var(--font-family);
+    font-weight:800;
+    font-size: 25px;
+    line-height: 20px;
+    background: rgb(40, 110, 61);
+    color: white;
+    outline:none;
+    cursor: pointer; 
+    padding: 30px;
+    margin: auto;
+    top:670px;
+
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius:15px;
+
+}
+
+@media screen and (max-width:650px){
+    .home__header-content h1{
+        font-size: 48px;
+        line-height: 60px;
+    }
+}

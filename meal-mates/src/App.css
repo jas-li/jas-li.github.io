@@ -1,0 +1,191 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    background: #DAF7DC;
+    overflow: hidden;
+  }
+  
+  a {
+    color: unset;
+    text-decoration: none;
+  }
+  
+
+ /*https://angrytools.com/gradient/ Gradient color code*/
+  .gradient__bg             
+{
+
+    /* ff 3.6+ */
+    background:-moz-linear-gradient(90deg, rgba(218, 247, 220, 1) 0%, rgba(158, 228, 147, 1) 50%, rgba(106, 141, 146, 1) 100%); 
+
+    /* safari 5.1+,chrome 10+ */
+    background:-webkit-linear-gradient(90deg, rgba(218, 247, 220, 1) 0%, rgba(158, 228, 147, 1) 50%, rgba(106, 141, 146, 1) 100%);
+
+    /* opera 11.10+ */
+    background:-o-linear-gradient(90deg, rgba(218, 247, 220, 1) 0%, rgba(158, 228, 147, 1) 50%, rgba(106, 141, 146, 1) 100%);
+
+    /* ie 6-9 */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6A8D92', endColorstr='#DAF7DC', GradientType=0 );
+
+    /* ie 10+ */
+    background:-ms-linear-gradient(90deg, rgba(218, 247, 220, 1) 0%, rgba(158, 228, 147, 1) 50%, rgba(106, 141, 146, 1) 100%);
+
+    /* global 94%+ browsers support */
+    background:linear-gradient(90deg, rgba(218, 247, 220, 1) 0%, rgba(158, 228, 147, 1) 50%, rgba(106, 141, 146, 1) 100%);
+
+}
+
+.section__padding {
+  padding: 4rem 6rem;
+}
+
+.section__margin {
+  margin: 4rem 6rem;
+}
+
+.scale-up-center {
+	-webkit-animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+	animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+.choose-preference{
+  background-color: #DAF7DC; 
+  display: flex;
+  flex-direction: column;
+  margin-top:8em;
+  height: 900px;
+  
+}
+
+.choose-preference h1{
+  background-color: #DAF7DC; 
+  font-size: 40px;
+  height: 70px;
+}
+
+.choose-preference p{
+  font-size: 20px;
+  height: 25px;
+}
+
+.choose-preference h2{
+  font-size: 40px;
+  margin-top: 5%;
+}
+
+.choose-preference-content__input{
+  background-color: #DAF7DC; 
+  width: 100%;
+  margin-top: 3%;
+
+    display: flex;
+    flex-direction: row;
+
+}
+
+
+.choose-preference-content__input input {
+  flex: 2;
+  width: 100%;
+  min-height: 50px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  background: rgba(255, 255, 255, 0.847);
+  border: 2px solid rgba(255, 255, 255, 0.847);
+  padding: 0 1rem;
+  outline: none;
+  color: rgb(0, 0, 0);
+
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+.choose-preference-content__input button {
+  flex: 0.6;
+  width: 100%;
+  min-height: 50px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  background: #DB5461;
+  border: 2px solid #DB5461;
+  padding: 0 1rem;
+  color: #fff;
+  cursor: pointer;
+  outline: none;
+
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+.choose-preference-content__input button:hover {
+  background-color: #ff9933;
+  border: 2px solid #ff9933;
+}
+.message {
+  font-family: var(--font-family);
+  font-size: 80px;
+  font-weight: bold;
+  color: #252627;
+  /* transform: rotate(6deg); */
+  border-radius: 50%;
+}
+.message h1{
+  font-family: var(--font-family);
+  font-size: 40px;
+  font-weight: bold;
+  color: #252627;
+  /* transform: rotate(6deg); */
+  border-radius: 50%;
+}
+
+/* .match_image-container {
+  width: 650px; 
+  height: 400px; 
+} */
+@-webkit-keyframes scale-up-center {
+  0% {
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes scale-up-center {
+  0% {
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .section__padding {
+    padding: 4rem;
+  }
+
+  .section__margin {
+    margin: 4rem;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .section__padding {
+    padding: 4rem 2rem;
+  }
+
+  .section__margin {
+    margin: 4rem 2rem;
+  }  
+}
